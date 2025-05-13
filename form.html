@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello HTML</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="form-data.js"></script>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .input-field {
+            border: 1px solid black;
+            border-radius: 15px;
+            background: lightgray
+        }
+      
+    </style>
+</head>
+<!-- Inline, Internal, External-->
+<!-- class(.) and ID(#)-->
+
+<body>
+    <div class="container">
+        <div style="border: 1px solid black; border-radius: 20px; padding: 30px">
+            <label>First Name:</label>
+            <div class="last-name"><input type="text" id="first-name" class="input-field" placeholder="Enter First Name"
+                    value="" onchange="getFirstName(event)"/></div>
+            <label>Last Name:</label>
+            <div class="last-name"><input type="text" class="input-field" placeholder="Enter Last Name" value="" onchange="getLastName(event)"/>
+            </div>
+            <label>Mobile Number</label>
+            <div id="mobile-number"><input type="number" class="input-field"
+                    placeholder="Enter Mobile Number" value="" onchange="getMobileNumber(event)"/></div>
+            <div style="text-align: center">
+                <button class="submit-button" id="on-submit-button" onclick="onButtonClick()" onmouseover="onButtonOver()" onmouseout="onButtonOverOut()">Submit</button>
+                <button class="submit-button" id="on-submit-button1" onmouseover="onButtonOver()" onmouseout="onButtonOverOut()">Cancel</button>
+
+            </div>
+        </div>
+        <div id="person-output" class="output"></div>
+    </div>
+</body>
+
+
+</html>
